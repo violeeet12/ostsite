@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime OST Gallery</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .scene-card {
+		aspect-ratio: 16 / 9;
+		 
+      background-color: #2a2a2a;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .scene-card:hover {
+      transform: scale(1.05);
+    }
+    .scene-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    /* 아래는 명장면 정보 넣을 수 있을 때 사용 가능 */
+    .scene-info {
+      padding: 10px;
+    }
+    .scene-info h3 {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+    }
+    .scene-info p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+	.scene-card {
+	  position: relative;
+	  background-color: #2a2a2a;
+	  border-radius: 10px;
+	  overflow: hidden;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+	  transition: transform 0.3s;
+	}
+	.scene-card:hover {
+	  transform: scale(1.05);
+	}
+	.scene-card img {
+	  width: 100%;
+	  height: auto;
+	  display: block;
+	}
+/* 오버레이 효과 */
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: rgba(0, 0, 0, 0.5);
+	  opacity: 0;
+	  color: #fff;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-size: 1.2em;
+	  font-weight: bold;
+	  transition: opacity 0.3s;
+	}
+
+	.scene-card:hover .overlay {
+	  opacity: 1;
+	}
+
+  </style>
+</head>
+<body>
+
+  <header>Anime OST Gallery</header>
+
+  <section class="gallery">
+    <!-- 나루토 -->
+    <a href="./naruto/naruto.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/naruto_main.jpg" alt="나루토 명장면">
+		<div class="overlay">나루토 OST 바로가기</div>
+      </div>
+    </a>
+
+    <!-- 진격의 거인 -->
+    <a href="./aot/aot.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/jingyeock_main.jpg" alt="진격의 거인 명장면">
+		<div class="overlay">진격의 거인 OST 바로가기</div>
+      </div>
+    </a>
+
+    <!-- 봇치 더 록 -->
+    <a href="./bochi/bochi.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/bocchi_main.jpg" alt="봇치 더 록 명장면">
+		<div class="overlay">봇치 더 락 OST 바로가기</div>
+      </div>
+    </a>
+
+    <!-- 걸스밴드 크라이 -->
+    <a href="./gbc/gbc.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/gbc_main.jpg" alt="걸스밴드 크라이 명장면">
+		<div class="overlay">걸즈 밴드 크라이 OST 바로가기</div>
+      </div>
+    </a>
+	
+	<!-- 강연금 -->
+    <a href="./fma/fma.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/fma_main.jpg" alt="강철의 연금술사 명장면">
+		<div class="overlay">강철의 연금술사 OST 바로가기</div>
+      </div>
+    </a>
+	
+	<!-- 주술회전 -->
+    <a href="./jjks/jjks.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/jjks_main.jpg" alt="주술회전 명장면">
+		<div class="overlay">주술회전 OST 바로가기</div>
+      </div>
+    </a>
+	
+	<!-- 너의 이름은 -->
+    <a href="./yourname/yourname.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/yourname_main.jpg" alt="너의 이름은 명장면">
+		<div class="overlay">너의 이름은 OST 바로가기</div>
+      </div>
+    </a>
+	
+	<!-- 귀멸의 칼날-->
+    <a href="./kimetsu/kimetsu.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/kimetsu_main.jpg" alt="귀멸의 칼날 명장면">
+		<div class="overlay">귀멸의 칼날 OST 바로가기</div>
+      </div>
+    </a>
+	
+	<!-- 날씨의 아이 -->
+    <a href="./tenki/tenki.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/tenki_main.jpg" alt="날씨의 아이 명장면">
+		<div class="overlay">날씨의 아이 OST 바로가기</div>
+      </div>
+    </a>
+	
+	<!-- 케이온 -->
+    <a href="./kon/kon.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/kon_main.jpg" alt="케이온 명장면">
+		<div class="overlay">케이온! OST 바로가기</div>
+      </div>
+    </a>
+	
+	<!-- 4월은 너의 거짓말 -->
+    <a href="./shigatsu/shigatsu.html" style="text-decoration: none; color: inherit;">
+      <div class="scene-card">
+        <img src="./image/shigatsu_main.jpg" alt="4월은 너의 거짓말 명장면">
+		<div class="overlay">4월은 너의 거짓말 OST 바로가기</div>
+      </div>
+    </a>
+	
+  </section>
+
+</body>
+</html>
