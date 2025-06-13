@@ -11,6 +11,9 @@
       font-family: sans-serif;
       padding: 20px;
     }
+	body {
+	font-size: 18px; /* 또는 1.125rem */
+	}
     details {
       margin-bottom: 20px;
       border: 1px solid #444;
@@ -30,9 +33,41 @@
       margin-top: 10px;
       border: none;
     }
+		header {
+	  background-color: #1e1e1e;
+	  padding: 20px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-start;
+	}
+
+	.logo-link {
+	  display: flex;
+	  align-items: center;
+	  text-decoration: none;
+	  color: #fff;
+	}
+
+	.logo {
+	  height: 40px;
+	  margin-right: 15px;
+	}
+
+	.site-title {
+	  font-size: 1.8em;
+	  font-weight: bold;
+	}
+
   </style>
 </head>
 <body>
+	<header>
+	  <a href="../index.html" class="logo-link">
+		<img src="../image/logo.png" alt="로고" class="logo">
+		<span class="site-title">Anime OST Gallery</span>
+	  </a>
+	</header>
+
 
   <h1>Naruto OST 모음</h1>
 

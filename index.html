@@ -2,6 +2,8 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  
+
   <title>Anime OST Gallery</title>
   <style>
     body {
@@ -18,6 +20,28 @@
       font-size: 2em;
       font-weight: bold;
     }
+		header {
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-start;
+	}
+
+	.logo-link {
+	  display: flex;
+	  align-items: center;
+	  text-decoration: none;
+	  color: #fff;
+	}
+
+	.logo {
+	  height: 40px;
+	  margin-right: 15px;
+	}
+
+	.site-title {
+	  font-size: 1.8em;
+	  font-weight: bold;
+	}
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -112,7 +136,12 @@
 </head>
 <body>
 
-  <header>Anime OST Gallery</header>
+  <header>
+  <a href="index.html" class="logo-link">
+    <img src="./image/logo.png" alt="로고" class="logo">
+    <span class="site-title">Anime OST Gallery</span>
+  </a>
+  </header>
 
   <section class="gallery">
     <!-- 나루토 -->
@@ -158,17 +187,6 @@
 		</a>
 		<div class="anime-title">걸즈 밴드 크라이</div>
 	</div>
-
-	<!-- 강연금 -->
-	<div class="card-container">
-		<a href="./fma/fma.html" style="text-decoration: none; color: inherit;">
-		  <div class="scene-card">
-			<img src="./image/fma_main.jpg" alt="강철의 연금술사 명장면">
-			<div class="overlay">강철의 연금술사 OST 바로가기</div>
-		  </div>
-		</a>
-		<div class="anime-title">강철의 연금술사</div>
-	</div>
 	
 	<!-- 주술회전 -->
 	<div class="card-container">
@@ -191,18 +209,7 @@
 		</a>
 		<div class="anime-title">너의 이름은</div>
 	</div>
-	
-	<!-- 귀멸의 칼날-->
-	<div class="card-container">
-		<a href="./kimetsu/kimetsu.html" style="text-decoration: none; color: inherit;">
-		  <div class="scene-card">
-			<img src="./image/kimetsu_main.jpg" alt="귀멸의 칼날 명장면">
-			<div class="overlay">귀멸의 칼날 OST 바로가기</div>
-		  </div>
-		</a>
-		<div class="anime-title">귀멸의 칼날</div>
-	</div>
-	
+		
 	<!-- 날씨의 아이 -->
 	<div class="card-container">
 		<a href="./tenki/tenki.html" style="text-decoration: none; color: inherit;">
@@ -214,27 +221,17 @@
 		<div class="anime-title">날씨의 아이</div>
 	</div>
 	
-	<!-- 케이온 -->
+	<!-- 바이올렛 에버가든 -->
 	<div class="card-container">
-		<a href="./kon/kon.html" style="text-decoration: none; color: inherit;">
+		<a href="./violet/violet.html" style="text-decoration: none; color: inherit;">
 		  <div class="scene-card">
-			<img src="./image/kon_main.jpg" alt="케이온 명장면">
-			<div class="overlay">케이온! OST 바로가기</div>
+			<img src="./image/violet.jpg" alt="날씨의 아이 명장면">
+			<div class="overlay">바이올렛 에버가든 OST 바로가기</div>
 		  </div>
 		</a>
-		<div class="anime-title">케이온!</div>
+		<div class="anime-title">바이올렛 에버가든</div>
 	</div>
 	
-	<!-- 4월은 너의 거짓말 -->
-	<div class="card-container">
-		<a href="./shigatsu/shigatsu.html" style="text-decoration: none; color: inherit;">
-		  <div class="scene-card">
-			<img src="./image/shigatsu_main.jpg" alt="4월은 너의 거짓말 명장면">
-			<div class="overlay">4월은 너의 거짓말 OST 바로가기</div>
-		  </div>
-		</a>
-		<div class="anime-title">4월은 너의 거짓말</div>
-	</div>
 	
   </section>
 
