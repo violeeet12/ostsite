@@ -6,7 +6,7 @@
   <title>진격의 거인 OST</title>
   <style>
     body {
-      background-color: #1e1e1e;
+      background-color: #f1f3f5;
       color: white;
       font-family: sans-serif;
       padding: 20px;
@@ -15,7 +15,7 @@
       margin-bottom: 20px;
       border: 1px solid #444;
       border-radius: 8px;
-      padding: 10px;
+      padding: 0px;
       background-color: #2a2a2a;
     }
     summary {
@@ -45,7 +45,18 @@
 	.site-title {
 	  font-size: 1.8em;
 	  font-weight: bold;
+	  color : #1e1e1e;
 	}
+		details summary {
+	  color: #000; /* 텍스트 색 (흰 배경에서는 검정 추천) */
+	  background-color: #fff; /* ✅ 이 부분이 줄(배경)을 흰색으로 만드는 핵심 */
+	  padding: 12px 16px;
+	  border-radius: 8px;
+	  cursor: pointer;
+	  font-weight: bold;
+	  border: 1px solid #ccc;
+}
+
   </style>
 </head>
 <body>
@@ -55,7 +66,7 @@
 		<span class="site-title">Anime OST Gallery</span>
 	  </a>
 	</header>
-  <h1>진격의 거인 OST 모음</h1>
+  <h1 style="color: #1e1e1e;">진격의 거인 OST 모음</h1>
 
   <details>
     <summary>🎵 홍련의 화살 - 진격의 거인 1기 1쿨 op</summary>
